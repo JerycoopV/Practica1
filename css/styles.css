@@ -1,0 +1,968 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero p {
+    animation: fadeInUp 1s ease-out 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.hero .btn-primary {
+    animation: fadeInUp 1s ease-out 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.hero-img {
+    animation: fadeInUp 1s ease-out 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Animación para los logos de partners */
+.partners-container {
+    animation: fadeInUp 1s ease-out 0.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.centro ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.centro ul li {
+    display: inline-block;
+}
+
+.centro ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.centro ul li a:hover {
+    color: #ff7a00;
+}
+
+/* Estilos del botón */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff7a00;
+    color: #ff7a00;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff7a00;
+    color: white;  /* Cambia el texto a blanco solo en el botón */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #1a307f;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio entre el h1 y el párrafo */
+}
+
+.hero p {
+    font-size: 15px; /* Texto más pequeño */
+    color: #70788e;
+    max-width: 600px;
+    margin: 10px auto 20px;
+    line-height: 1.8; /* Espaciado entre líneas del párrafo */
+    margin-bottom: 50px; /* Más espacio debajo */
+    color: black;
+}
+
+.hero .btn-primary {
+    background: #ff7300;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 40px; /* Espacio debajo del botón */
+}
+
+.hero .btn-primary:hover {
+    background: #e06600;
+}
+
+.hero-img {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 50px; /* Más espacio debajo */
+}
+
+.trusted {
+    font-size: 150px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 20px;
+}
+
+.trusted span {
+    font-weight: bold;
+    color: #3965c4;
+}
+
+
+.partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    width: 100%;
+    padding-bottom: 40px; /* Reduce espacio extra */
+    margin-bottom: 60px; /* Evita margen innecesario */
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap; /* Evita que los elementos se salgan */
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Reduce el espacio entre logos */
+    padding-bottom: 20px;
+}
+.partner-item {
+    display: flex;
+    align-items: center;
+    color: #aaa; /* Color inicial gris */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    gap: 25px;
+}
+
+.partner-item i {
+    font-size: 40px; /* Tamaño del icono */
+}
+
+.partner-item:hover {
+    color: black; /* Cambio de color al pasar el mouse */
+}
+
+/* Línea inferior */
+.underline {
+    width: 85%;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 20px; /* Ajuste para reducir el espacio extra */
+}
+
+
+/* Features */
+
+.despues {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.features-section h2 {
+    font-size: 36px; /* Tamaño más grande */
+    font-weight: bold;
+    color: #1D2D5C; /* Azul oscuro */
+    margin-bottom: 50px; /* Espacio extra debajo */
+}
+
+.features-section h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 1.8;
+    margin-bottom: 10px; /* Más espacio debajo */
+}
+
+.features-section h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 1.8;
+    margin-bottom: 100px; /* Más espacio debajo */
+}
+
+.despues p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 320px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature-item i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #141b34;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: color 0.3s ease;
+}
+
+/* Colores específicos para cada ícono */
+.icon-audio {
+    color: #4A90E2;
+}
+
+.icon-screen {
+    color: #4A90E2;
+}
+
+.icon-messaging {
+    color: #D57BFF;
+}
+
+/* Efecto hover */
+.feature-item:hover {
+    background: rgba(0, 0, 255, 0.1); /* Fondo azul claro */
+}
+
+.feature-item:hover i,
+.feature-item:hover h3,
+.feature-item:hover p {
+    color: #0044cc; /* Azul más oscuro */
+}
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animado {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Cuando el elemento entra en pantalla */
+.animado.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.continuo {
+    background-color: #f0f4f8; /* Color de fondo gris */
+    min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 50px 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Ajuste de ancho máximo */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-choose-us {
+    font-size: 45px; /* Ajusta el tamaño según lo que necesites */
+    color: #182061;
+    margin-bottom: 25px; /* Ajusta el espacio entre el h2 y el h1 */
+}
+.container h1 {
+    font-size: 1.2rem;
+    color: #a7b0c1;
+    margin: 10px auto 40px;
+    margin-bottom: 10px;
+}
+.container h3 {
+    font-size: 1.2rem;
+    color: #a7b0c1;
+    margin: 10px auto 40px;
+    margin-bottom: 60px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.main-image {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    max-width: 700px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen si es necesario */
+}
+.features-continuo{
+    background-color: transparent;
+}
+.feature {
+    background-color: transparent; /* Totalmente transparente por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: none; /* Sin sombra ni borde por defecto */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    border: none; /* Sin borde */
+}
+.hidden-text {
+    display: none; /* Ocultar por defecto */
+    font-size: 14px;
+    margin-top: 10px; /* Espacio entre el título y el texto */
+    width: 100%;
+}
+
+.feature.active .hidden-text {
+    display: block; /* Mostrar cuando se activa */
+}
+.feature img {
+    width: 30px;
+    height: 30px;
+}
+
+.feature span {
+    font-weight: bold;
+}
+.feature p {
+    display: none;
+}
+
+.feature.active {
+    background: #007bff;
+    color: white;
+}
+
+.feature.active p {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+
+.Power {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.Power-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.Power h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 25px; /* Aumenta el espacio debajo del h1 */
+}
+
+.Power p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 25px; /* Aumenta el espacio debajo del párrafo */
+}
+
+.Power button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.Power button:hover {
+    background-color: #0056b3;
+}
+
+.Power img {
+    max-width: 45%;
+    height: auto;
+}
+.PowerColab {
+    background-color: #1e276d;
+    color: white;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row-reverse; /* Invierte el orden: imagen a la izquierda, texto a la derecha */
+}
+
+/* Contenedor del texto */
+.content2 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; /* Asegura que todo esté alineado a la izquierda */
+}
+
+.PowerColab h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.PowerColab p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 45px;
+    text-align: left;
+}
+
+.PowerColab button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: left; /* Asegura alineación */
+}
+
+.PowerColab button:hover {
+    background-color: #e65c00;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilo de la imagen */
+.image-container img {
+    width: 80%;
+    max-width: 450px;
+    transform: rotate(-10deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .PowerColab {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: left; /* Asegura que el texto se mantenga alineado en pantallas pequeñas */
+    }
+
+    .image-container {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 90%;
+        transform: rotate(0deg);
+    }
+}
+
+
+.testimonial-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.testimonial-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Imagen de las comillas azules */
+.quote-image {
+    width: 60px; /* Aumenta el tamaño */
+    margin-bottom: 20px;
+}
+/* Texto del testimonio */
+.testimonial-text .testimonial {
+    font-size: 20px;
+    color: #1A1A1A;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Imagen con el nombre y logo */
+.author-image {
+    width: 500px; /* Aumenta el tamaño */
+    margin-top: 10px;
+    align-self: flex-start; /* Alinea la imagen a la izquierda */
+}
+
+/* Ajuste de la imagen con el círculo */
+.testimonial-image {
+    width: 500px; 
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Imagen de la persona */
+.person {
+    width: 800px; /* Aumenta el tamaño de la imagen */
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.New {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.New h1 {
+    font-size: 2.5rem;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.New p {
+    font-size: 1rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 10px auto 30px;
+    margin-bottom: 10px;
+}
+.New h3 {
+    font-size: 1rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 10px auto 30px;
+    margin-bottom: 60px;
+}
+
+.New .news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.New .card {
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+}
+
+.New .card:hover {
+    transform: scale(1.05);
+}
+
+.New .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.New .card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.New .card-content h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.New .card-content p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.card.highlight {
+    background: #1e88e5; /* Color azul */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px; /* Ajusta según sea necesario */
+    font-family: Arial, sans-serif;
+}
+
+.card.highlight h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card.highlight img {
+    width: 25px; /* Tamaño correcto */
+    height: 25px;
+    padding: 2px; /* Espaciado dentro del borde */
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-img {
+    width: 5px; /* Tamaño más pequeño */
+    height: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 2px solid #74b9ff; /* Marco celeste */
+    padding: 2px; /* Espaciado dentro del borde */
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Espaciado entre los elementos */
+}
+
+.author-details span {
+    font-size: 14px;
+    color: #fff; /* Asegura que se vea bien sobre fondo azul */
+}
+.date {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+.card.highlight p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card.highlight .learn-more {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card.highlight .learn-more::after {
+    content: " →"; /* Asegura que solo haya una flecha */
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.card.highlight .learn-more:hover::after {
+    margin-left: 10px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita espacios en blanco */
+    display: flex;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+.footer {
+    margin-top: 100px;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    flex-wrap: wrap;
+}
+.footer-logo {
+    text-align: left;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: flex-start; /* Alinea todo a la izquierda */
+}
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre la imagen y el texto */
+    align-items: flex-start; /* Alinea todo a la izquierda */
+}
+.logo-text span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a2b5c; /* Ajusta el color del texto según el diseño */
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 250px;
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: #6c757d;
+    font-size: 16px;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+}
+
+.social-icons a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; /* Aumenta la separación entre columnas */
+    align-items: flex-start; /* Alinea con el texto de la izquierda */
+}
+
+.footer-links div {
+    min-width: 150px; /* Evita que las columnas sean muy estrechas */
+}
+
+.footer-links h3 {
+    color: #282a5b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+.footer-links ul li a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #6c757d;
+    width: 100%;
+}
+
+/* Ajustes para ocupar todo el ancho */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Separa logo e información */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
