@@ -15,15 +15,17 @@ Se ha desarrollado utilizando **HTML, CSS y JavaScript** para lograr una estruct
 ├── index.html  # Página principal  
 
 
+
 🚀 Tecnologías Utilizadas
-- Html
-- Css
-- JavaScript
+-  Html
+-  Css
+-  JavaScript
 
 📌 Mejoras Posibles
-🔹 Optimización del código y mejora en la carga de imágenes.
-🔹 Implementar efectos adicionales con JavaScript.
-🔹 Corrección en la posición de las imágenes para mayor fidelidad al diseño original.
+-  Optimización del código y mejora en la carga de imágenes.
+-  Implementar efectos adicionales con JavaScript.
+-  Corrección en la posición de las imágenes para mayor fidelidad al diseño original.
 
 📜 Licencia: Este proyecto fue desarrollado con fines educativos.
+
 ✉️ Contacto: Si tienes sugerencias o mejoras, no dudes en contribuir. 🚀
