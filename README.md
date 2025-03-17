@@ -6,7 +6,9 @@ Se ha desarrollado utilizando **HTML, CSS y JavaScript** para lograr una estruct
 
 🔗 **Enlace al proyecto:** [Ver demo aquí](https://jerycoopv.github.io/Practica1/)  
 
----
+
+
+
 
 ## 📂 Estructura del Proyecto  
 ├── css/        # Estilos CSS del proyecto  
