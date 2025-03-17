@@ -9,10 +9,10 @@ enlace: https://jerycoopv.github.io/Practica1/
 
 📂 Estructura del Proyecto
 
-├── css/        # Estilos CSS del proyecto
-├── img/        # Imágenes utilizadas en el diseño
-├── js/         # Archivos JavaScript para interactividad
-├── index.html  # Página principa
+-  css/       # Estilos CSS del proyecto
+- img/        # Imágenes utilizadas en el diseño
+- js/         # Archivos JavaScript para interactividad
+- index.html  # Página principa
 
 Tecnologías Utilizadas: 
 
